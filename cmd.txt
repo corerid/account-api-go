@@ -1,0 +1,5 @@
+- Create docker image from Dockerfile
+docker image build -t gogo:10 .
+
+- Create docker container from following image
+winpty docker container run --name golang -it -p 3000:3000 gogo:10 ./main
