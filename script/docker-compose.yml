@@ -1,0 +1,12 @@
+postgres:
+  image: postgres:11.5-alpine
+  ports:
+   - "5434:5432"
+  expose:
+   - "5434"
+  environment:
+   - POSTGRES_USER:'postgres'
+   - POSTGRES_PASSWORD:'password1234'
+   - POSTGRES_DB:'go_test'
+  volumes:
+   - ./script.sql:/docker-entrypoint-initdb.d/init.sql 
