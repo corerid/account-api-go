@@ -11,11 +11,11 @@ import (
 var db *sql.DB
 
 const (
-    dbhost = "localhost"
+    dbhost = "XXX.XXX.XXX.XXX"
     dbport = 5432
     dbuser = "postgres"
     dbpass = "password1234"
-    dbname = "go-test"
+    dbname = "postgres"
 )
 
 // init main func
